@@ -1,8 +1,10 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider")
 const Web3 = require('web3')
+require('dotenv').config()
 const { abi, evm } = require('./compile')
-const provider = new HDWalletProvider('scout document perfect matrix prison bench cup sheriff tumble arena loop jewel',
-  'https://goerli.infura.io/v3/f519642fe51e43a5b369104385eda5cb'
+
+const provider = new HDWalletProvider(process.env.PHRASE,
+  process.env.ENDPOINT_URL
 )
 const web3 = new Web3(provider)
 

@@ -2,21 +2,21 @@ lockfileVersion: 5.3
 
 specifiers:
   '@truffle/hdwallet-provider': ^2.0.9
+  dotenv: ^16.0.1
   ganache: ^7.3.0
-  ganache-cli: ^6.12.2
   mocha: ^10.0.0
   solc: ^0.8.14-fixed
   web3: ^1.7.3
 
 dependencies:
   ganache: 7.3.0
-  ganache-cli: 6.12.2
   mocha: 10.0.0
   solc: 0.8.14-fixed
   web3: 1.7.3
 
 devDependencies:
   '@truffle/hdwallet-provider': 2.0.9
+  dotenv: 16.0.1
 
 packages:
 
@@ -1273,6 +1273,11 @@ packages:
   /dom-walk/0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
 
+  /dotenv/16.0.1:
+    resolution: {integrity: sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==}
+    engines: {node: '>=12'}
+    dev: true
+
   /duplexer3/0.1.4:
     resolution: {integrity: sha512-CEj8FwwNA4cVH2uFCoHUrmojhYh1vmCdOaneKJXwkeY1i9jnlslVo9dx+hQ5Hl9GnH/Bwy/IjxAyOePyPKYnzA==}
     dev: false
@@ -1914,16 +1919,6 @@ packages:
   /functions-have-names/1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: false
-
-  /ganache-cli/6.12.2:
-    resolution: {integrity: sha512-bnmwnJDBDsOWBUP8E/BExWf85TsdDEFelQSzihSJm9VChVO1SHp94YXLP5BlA4j/OTxp0wR4R1Tje9OHOuAJVw==}
-    deprecated: ganache-cli is now ganache; visit https://trfl.io/g7 for details
-    hasBin: true
-    dev: false
-    bundledDependencies:
-      - source-map-support
-      - yargs
-      - ethereumjs-util
 
   /ganache/7.3.0:
     resolution: {integrity: sha512-FPfMsmYUiE4E0fxoqu9owdsfcA7xGz4dUrRvaucXvFgJL3Bh/JBqcGDRQajpqmu8v4hGs94NlJOVlD0Zm69uCA==}
